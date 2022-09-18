@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+a{
+    text-decoration: none;
+    transition: .5s;
+}
+
+body{
+    background-color: rgba(255, 212, 0, 1);
+}
+iframe{
+    width: 100%;
+    height: 500px;
+    border: 0;
+    /* filter: invert(100%);  */
+}
+@font-face {
+    font-family: 'Supply';
+    src: url('/font/supply.otf');
+}
+@font-face {
+    font-family: 'Euclid circular';
+    src: url('/font/Euclid\ Circular\ A\ Bold.ttf');
+}
+.menu button{
+    display: none;
+}
+.logo{
+    height: 45px;
+    padding: 15px 20px;
+    position: absolute;
+    
+}
+.menu{
+    width: 100%;
+    /* position: absolute; */
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    box-shadow: 1px 2px 3px black;
+    justify-content: flex-end;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+.menuItens{
+    display: flex;
+    flex-direction: row;
+    /* margin: 0 auto; */
+    padding-right: 15px;
+     
+}
+.menuItens li{
+    padding: 30px 10px;
+    
+}
+.menuItens li a{
+    font-family:Euclid circular;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+    /* text-transform: uppercase; */ 
+    position: relative;
+}
+.menuItens li a::after{
+   content: '';
+   position: absolute;
+   bottom: -3px;
+   left: 10%;
+   width: 0;
+   height: 2px;
+   background: #000000;
+   transition: all 300ms ease-in-out;
+}
+.menuItens li a:hover::after{
+    width: 80%;
+    /* left: 20%; */
+}
+.btn{
+    color: rgba(255, 212, 0, 1) !important;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 9px;
+    border-radius: 100px;
+    font-style: normal;
+}
+
+.principalC{
+    /* width: auto; */
+}
+.pricipal{
+    width: auto;
+}
+.textos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 70px 25px;
+    width: 838px;
+    height: 388px;
+}
+.texto1{
+    font-family: Euclid circular;
+    color: rgba(0, 0, 0, 0.55);
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 30px;
+    /* position: relative; */
+    
+}
+.texto2{
+    font-family: Supply;
+    font-size: 58px;
+    line-height: 100%;
+    letter-spacing: -0.9px;
+    color: #000000;
+    mix-blend-mode: normal;
+    align-self: stretch; 
+}
+.texto3{
+    font-family: Euclid circular;
+    font-size: 19px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: #000000;
+}
+.imagem14{
+    height: 72px;
+    width: 204px;
+}
+.p1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+}
+.imagem{
+    width: 800px;
+    height: 865px;
+    position: absolute; 
+    left: 32%;
+    right: 4%;
+    top: 5%;
+    bottom: 0%;
+    border-radius: 80px;
+} 
+
+.imagens5{
+    padding-top: 160px;
+}
+.imagenP{
+    height: 46px;
+    width: 46px;
+}
